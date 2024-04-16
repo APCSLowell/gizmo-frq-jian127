@@ -12,7 +12,12 @@ public class OnlinePurchaseManager
   public int countElectronicsByMaker(String maker)
   {
     int c = 0;
-    if(
+    for(Gizmo g : purchases){
+      if(g.isElectronic() && g.getMaker().equals(maker())){
+        c++;
+      }
+    }
+    return c;
   }
   
   /** Returns true if any pair of adjacent purchased Gizmo objects are
