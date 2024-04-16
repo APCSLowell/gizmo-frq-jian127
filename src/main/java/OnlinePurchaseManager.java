@@ -11,7 +11,8 @@ public class OnlinePurchaseManager
   */
   public int countElectronicsByMaker(String maker)
   {
-    /* to be implemented in part (a) */
+    int c = 0;
+    if(
   }
   
   /** Returns true if any pair of adjacent purchased Gizmo objects are
